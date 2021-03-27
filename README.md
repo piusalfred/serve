@@ -3,7 +3,7 @@
 
 ## build
 ```bash
-go build -o server
+go build -o serve
 
 ```
 
