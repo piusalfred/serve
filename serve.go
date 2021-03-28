@@ -23,7 +23,7 @@ func main() {
 
 	go func() {
 		log.Printf("Serving %s on HTTP port: %s\n", *directory, *port)
-		log.Fatal(http.ListenAndServe(":"+*port, nil))
+		errs <- http.ListenAndServe(":"+*port,nil)
 	}()
 
 	go func() {
