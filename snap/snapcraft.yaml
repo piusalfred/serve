@@ -1,0 +1,17 @@
+name: serve
+base: core18
+version: '0.1.0'
+summary: incredibly simple and fast static file server # 79 char long summary
+description: |
+  This is a static file server written using Google's golang. It was
+  primarily built to share files between computers on the same network
+  but the use cases can be expanded beyond that, Forexample it can be
+  installed in docker container to expose certain directory files.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil
